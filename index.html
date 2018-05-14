@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    username:<input id="username" type="text">
+    <br>
+    password:<input id="password" type="password">
+    <br>
+    <button type="button" onclick="submit()">提交</button>
+<script>
+  function submit() {
+    var userName = document.getElementById("username").value
+    var password = document.getElementById("password").value
+    if (userName === "123" && password === "123")
+      alert("恭喜你，回答正确！")
+    else {
+      alert("你的账号或密码输入错误，请重新尝试")
+      document.getElementById("password").value = ""
+    }
+  }
+</script>
+</body>
+</html>
